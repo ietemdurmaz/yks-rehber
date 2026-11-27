@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YKS Tercih ve Şehir Rehberi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>YKS Tercih ve Şehir Rehberi</h1><p>Puanını ve hedefini gir; üniversiteleri, yurt/kira ve part-time iş bilgilerini gör.</p></header>
+<main>
+<form id="form">
+  <label>YKS Puanı <input type="number" id="puan" min="100" max="560" value="440" required></label>
+  <label>Puan Türü
+    <select id="tur"><option>SAY</option><option>EA</option><option>SÖZ</option><option>TYT</option></select></label>
+  <label>İstenen Bölüm <input type="text" id="bolum" value="Tıp" required></label>
+  <label>Şehir <select id="sehir"></select></label>
+  <label>Üniversite Türü
+    <select id="utur"><option value="">Tümü</option><option>Devlet</option><option>Vakıf</option></select></label>
+  <button type="submit">Göster</button>
+</form>
+<section id="sonuc"></section>
+</main>
+<footer>Veriler örnektir; resmi kaynaklar: YÖK Atlas, ÖSYM.</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
